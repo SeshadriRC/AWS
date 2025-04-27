@@ -2,6 +2,11 @@
 
 **I AM Service**
 
+![image](https://github.com/user-attachments/assets/e6f11697-a64c-4ddf-bbf8-542be73daeed)
+![image](https://github.com/user-attachments/assets/1c6e0d70-d375-490b-8e63-e7f35bcde540)
+![image](https://github.com/user-attachments/assets/4dba025a-f30e-4e9c-8363-1f9cc777c30c)
+
+
 1. What is IAM users,policies,groups and roles in AWS
 
 Term | Meaning | Example
@@ -95,4 +100,64 @@ Inside the group, click the "Add users" button (top-right).
 Select the users you want to add (checkbox).
 
 Click Add users at the bottom.
+
+**How to create a policy in IAM**
+
+1. Go to IAM:
+   
+Login to AWS Console.
+
+Open IAM.
+
+2. Open Policies:
+   
+On the left side, click Policies.
+
+4. Create Policy:
+   
+Click Create policy (top-right).
+
+6. Set Permissions:
+   
+You have two options:
+
+Visual Editor → You can select Service, Actions, Resources easily (no coding).
+
+JSON → You can paste/write your own JSON policy.
+
+Example (Visual Editor way):
+
+Choose Service (example: S3).
+
+Choose Actions (example: ListBucket and GetObject).
+
+Choose Resources (example: Specific bucket or all buckets).
+
+Example (JSON way):
+
+json
+Copy
+Edit
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::example-bucket"
+        }
+    ]
+}
+
+5. Add Tags (optional):
+
+You can tag it if you want (not mandatory).
+
+6. Name and Create:
+   
+Give a Policy Name (example: S3ReadOnlyPolicy).
+
+(Optional) Add a description.
+
+Click Create policy.
 
