@@ -167,3 +167,64 @@ Give a Policy Name (example: S3ReadOnlyPolicy).
 Click Create policy.
 
 ## EC2
+
+![image](https://github.com/user-attachments/assets/ab70a543-bcdf-4bfc-9a44-fa044b4736c0)
+![image](https://github.com/user-attachments/assets/bd86809b-5455-44b6-850e-829310bb4b6e)
+![image](https://github.com/user-attachments/assets/bfc073c9-2fff-4f68-a4ed-da7a0228a213)
+![image](https://github.com/user-attachments/assets/007b41c9-038e-4918-a36a-162f2b7fca1e)
+![image](https://github.com/user-attachments/assets/c7190286-ffc2-4ba5-ae74-70ffd0a22ae6)
+![image](https://github.com/user-attachments/assets/6ac7651d-e92a-4270-bf0e-45dd2f19591c)
+
+1. Go to EC2:
+   
+Login to AWS Console.
+
+Search and open EC2.
+
+2. Launch Instance:
+   
+Click Launch Instance (top-right).
+
+4. Configure Basic Details:
+   
+Name: Give a name for your server (example: my-test-server).
+
+Application and OS Image (AMI): Choose an OS (example: Amazon Linux, Ubuntu, Windows, etc.).
+
+Instance Type: Choose size (example: t2.micro is free-tier eligible).
+
+Key Pair (login):
+
+Choose an existing key pair or
+
+Create a new key pair (you need this .pem file to connect later).
+
+4. Configure Network:
+   
+Select a VPC and Subnet (default is fine if unsure).
+
+Configure Firewall (Security Group):
+
+Allow SSH (port 22) for Linux or RDP (port 3389) for Windows.
+
+You can restrict access to your IP for security.
+
+5. Storage:
+   
+Default storage is fine (example: 8 GB gp2).
+
+7. Launch:
+   
+Click Launch Instance.
+
+Wait a minute or two → instance will start running.
+
+ssh -i .pem(file) <user_name>@public_ipaddress
+
+
+
+
+
+
+
+
