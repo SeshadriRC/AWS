@@ -1,7 +1,7 @@
 # AWS
 
 ## Topics
-- [I AM Service](#i-am-service)
+[I AM Service](#i-am-service)
 
 ## I AM Service
 
