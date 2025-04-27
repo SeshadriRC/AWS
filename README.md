@@ -174,6 +174,8 @@ Click Create policy.
 ![image](https://github.com/user-attachments/assets/007b41c9-038e-4918-a36a-162f2b7fca1e)
 ![image](https://github.com/user-attachments/assets/c7190286-ffc2-4ba5-ae74-70ffd0a22ae6)
 ![image](https://github.com/user-attachments/assets/6ac7651d-e92a-4270-bf0e-45dd2f19591c)
+![image](https://github.com/user-attachments/assets/1b216467-6088-40a4-951a-64ceba7c16ee)
+
 
 1. Go to EC2:
    
