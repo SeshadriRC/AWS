@@ -228,6 +228,11 @@ ssh -i .pem(file) <user_name>@public_ipaddress
 
 ### Connect to EC2
 
+You need Public Ip address, username, .pem file
+
+![image](https://github.com/user-attachments/assets/d03ea1d2-261e-4600-9426-c1ad82e70b1f)
+
+
 
 
 
