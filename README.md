@@ -4,6 +4,7 @@
 [I AM Service](#i-am-service)
 
 [EC2](#ec2)
+[Connect to EC2](#connect-to-ec2)
 
 ## I AM Service
 
@@ -224,7 +225,7 @@ Wait a minute or two → instance will start running.
 
 ssh -i .pem(file) <user_name>@public_ipaddress
 
-
+### Connect to EC2
 
 
 
