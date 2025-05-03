@@ -7,6 +7,8 @@
 
 - [Connect to EC2](#connect-to-ec2)
 
+[VPC](#vpc)
+
 ## I AM Service
 
 ![image](https://github.com/user-attachments/assets/e6f11697-a64c-4ddf-bbf8-542be73daeed)
@@ -233,7 +235,55 @@ You need Public Ip address, username, .pem file
 ![image](https://github.com/user-attachments/assets/d03ea1d2-261e-4600-9426-c1ad82e70b1f)
 
 
+## VPC
 
+![image](https://github.com/user-attachments/assets/8d477246-0f27-441f-9642-a6c82b8ca5c8)
+
+**VPC (Virtual Private Cloud)**
+
+A VPC is like your own private network inside the cloud (e.g., AWS, OCI). You control how resources like servers (EC2 instances) communicate with each other and the internet.
+
+**Subnet**
+
+A subnet is a section of your VPC’s IP range.
+
+You split your VPC into subnets to organize and isolate resources.
+
+Subnets can be public (internet-facing) or private (internal only).
+
+**Private IP Address**
+
+Assigned to resources inside a subnet.
+
+Used for internal communication within the VPC.
+
+Not reachable from the internet.
+
+**Public IP Address**
+
+Optional and used for internet access.
+
+Mapped to a private IP on a resource (like a VM or load balancer).
+
+Reachable from the internet.
+
+**Route Table**
+
+Contains rules (routes) that decide where network traffic goes.
+
+Example:
+
+Traffic to 0.0.0.0/0 goes to internet gateway → allows internet access.
+
+Traffic to a specific subnet stays inside the VPC.
+
+**Load Balancer**
+
+Distributes traffic across multiple backend resources (e.g., app servers).
+
+Can be public (internet-facing) or private (internal use).
+
+Helps handle large traffic and increases availability.
 
 
 
