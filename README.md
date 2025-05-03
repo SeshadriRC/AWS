@@ -285,6 +285,35 @@ Can be public (internet-facing) or private (internal use).
 
 Helps handle large traffic and increases availability.
 
+**Internet Gateway**
 
+An Internet Gateway (IGW) is a component that allows resources in your VPC to connect to the internet — and also allows the internet to reach them (if they have a public IP and correct route).
 
+Key Points:
+
+It’s attached to a VPC.
+
+It provides a path for internet traffic to and from the VPC.
+
+It works with public subnets where resources (like VMs) need internet access.
+
+🧭 How It Works:
+
+A VM (EC2 instance) in a public subnet has:
+
+A public IP
+
+A route to 0.0.0.0/0 via the Internet Gateway
+
+When the VM sends traffic to the internet:
+
+The route table forwards it to the Internet Gateway.
+
+The public IP is used for the internet to respond.
+
+The Internet Gateway allows bidirectional communication:
+
+Outbound (VM → Internet)
+
+Inbound (Internet → VM, if security rules allow)
 
