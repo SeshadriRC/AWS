@@ -343,9 +343,11 @@ To protect networks and systems from unauthorized access, cyberattacks, or expos
 ![image](https://github.com/user-attachments/assets/bc47f8db-635c-4cb3-bfc9-2dc3169d18e5)
 
 **SecurityGroup**
+
 A Security Group acts as a virtual firewall for your Amazon EC2 instances to control inbound and outbound traffic. It works at the instance level and it is the last stage
 
-NACL
+**NACL**
+
 A Network ACL (NACL) is another layer of security for your VPC that controls traffic at the subnet level.
 
 
