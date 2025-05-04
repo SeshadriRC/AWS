@@ -9,11 +9,17 @@
 
 [VPC](#vpc)
 
+[Firwall](#firewall)
+
+[Security Group and NACL](#securitygroup-and-nacl)
+
+
 ## I AM Service
 
 ![image](https://github.com/user-attachments/assets/e6f11697-a64c-4ddf-bbf8-542be73daeed)
 ![image](https://github.com/user-attachments/assets/1c6e0d70-d375-490b-8e63-e7f35bcde540)
 ![image](https://github.com/user-attachments/assets/4dba025a-f30e-4e9c-8363-1f9cc777c30c)
+
 
 
 1. What is IAM users,policies,groups and roles in AWS
@@ -243,6 +249,10 @@ You need Public Ip address, username, .pem file
 
 A VPC is like your own private network inside the cloud (e.g., AWS, OCI). You control how resources like servers (EC2 instances) communicate with each other and the internet.
 
+When you create a VPC, you define an IP address range (CIDR block), which determines the size of your VPC. Within that range, you can create subnets to organize and allocate IP addresses for different resources.
+
+
+
 **Subnet**
 
 A subnet is a section of your VPC’s IP range.
@@ -285,6 +295,8 @@ Can be public (internet-facing) or private (internal use).
 
 Helps handle large traffic and increases availability.
 
+The load balancer has access to the private subnet, and the user has access to the load balancer.
+
 **Internet Gateway**
 
 An Internet Gateway (IGW) is a component that allows resources in your VPC to connect to the internet — and also allows the internet to reach them (if they have a public IP and correct route).
@@ -317,3 +329,21 @@ Outbound (VM → Internet)
 
 Inbound (Internet → VM, if security rules allow)
 
+**Firewall**
+
+Firewall
+A firewall is a network security device or software that monitors and controls incoming and outgoing network traffic based on predefined security rules.
+
+Purpose:
+To protect networks and systems from unauthorized access, cyberattacks, or exposure by allowing only trusted traffic.
+
+
+**Securitygroup and NACL**
+
+![image](https://github.com/user-attachments/assets/bc47f8db-635c-4cb3-bfc9-2dc3169d18e5)
+
+**SecurityGroup**
+A Security Group acts as a virtual firewall for your Amazon EC2 instances to control inbound and outbound traffic. It works at the instance level and it is the last stage
+
+NACL
+A Network ACL (NACL) is another layer of security for your VPC that controls traffic at the subnet level.
