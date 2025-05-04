@@ -329,16 +329,15 @@ Outbound (VM → Internet)
 
 Inbound (Internet → VM, if security rules allow)
 
-**Firewall**
+## Firewall
 
-Firewall
 A firewall is a network security device or software that monitors and controls incoming and outgoing network traffic based on predefined security rules.
 
 Purpose:
 To protect networks and systems from unauthorized access, cyberattacks, or exposure by allowing only trusted traffic.
 
 
-**Securitygroup and NACL**
+Securitygroup and NACL
 
 ![image](https://github.com/user-attachments/assets/bc47f8db-635c-4cb3-bfc9-2dc3169d18e5)
 
