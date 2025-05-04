@@ -338,7 +338,7 @@ Purpose:
 To protect networks and systems from unauthorized access, cyberattacks, or exposure by allowing only trusted traffic.
 
 
-Securitygroup and NACL
+## Securitygroup and NACL
 
 ![image](https://github.com/user-attachments/assets/bc47f8db-635c-4cb3-bfc9-2dc3169d18e5)
 
@@ -347,3 +347,5 @@ A Security Group acts as a virtual firewall for your Amazon EC2 instances to con
 
 NACL
 A Network ACL (NACL) is another layer of security for your VPC that controls traffic at the subnet level.
+
+
