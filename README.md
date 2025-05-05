@@ -355,3 +355,17 @@ A Network ACL (NACL) is another layer of security for your VPC that controls tra
 
 ## Route 53
 
+Amazon Route 53 is a scalable and highly available Domain Name System (DNS) web service offered by AWS. It's primarily used to:
+
+**Key Functions**
+
+**DNS Service** Translates human-readable domain names (like www.example.com) into IP addresses (like 192.0.2.1) that computers use to connect.
+
+**Domain Registration** You can register new domain names directly through Route 53.
+
+**Health Checks & Failover** Monitors the health of your applications and can automatically redirect traffic if a resource becomes unavailable.
+
+**Traffic Management** Uses policies like geolocation, latency-based routing, weighted routing, and failover to direct users to the best endpoint.
+
+**Integration with other AWS Services** Works well with services like EC2, ELB, S3, CloudFront, etc.
+
