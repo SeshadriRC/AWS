@@ -302,6 +302,30 @@ Helps handle large traffic and increases availability.
 
 The load balancer has access to the private subnet, and the user has access to the load balancer.
 
+**Target Groups**
+
+A target group is a group of servers (like EC2 instances) that receive traffic from a load balancer.
+
+Think of it as: “Who should get the traffic?”
+
+Example: If you have a website running on 3 EC2s, all 3 can be in one target group, and the load balancer will send traffic to any of them.
+
+**Bastian**
+
+A bastion is a secure server you use to connect to other private servers.
+
+It acts as a mediator between private and public subnet
+
+Example: You can SSH into the bastion (which is public), and from there, access EC2s that are in private subnets.
+
+**Autoscaling group**
+
+An Auto Scaling Group automatically adds or removes EC2 instances based on demand.
+
+Example: If your app gets a lot of traffic, ASG adds more EC2s. If traffic drops, it removes extra EC2s.
+
+Helps with cost-saving and performance.
+
 **Internet Gateway**
 
 An Internet Gateway (IGW) is a component that allows resources in your VPC to connect to the internet — and also allows the internet to reach them (if they have a public IP and correct route).
