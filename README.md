@@ -10,7 +10,11 @@
 [VPC](#vpc)
 
 - [Prod_grade_vpc](#Production-grade-VPC-setup)
-
+- [Load_Balancer](#Load-Balancer)
+- [Target Groups](#Target-Groups)
+- [Bastion](#Bastion)
+- [Autoscaling group](#Autoscaling-group)
+  
 [Firewall](#firewall)
 
 [Security Group and NACL](#securitygroup-and-nacl)
@@ -292,7 +296,7 @@ Traffic to 0.0.0.0/0 goes to internet gateway → allows internet access.
 
 Traffic to a specific subnet stays inside the VPC.
 
-**Load Balancer**
+## Load Balancer
 
 Distributes traffic across multiple backend resources (e.g., app servers).
 
@@ -302,7 +306,7 @@ Helps handle large traffic and increases availability.
 
 The load balancer has access to the private subnet, and the user has access to the load balancer.
 
-**Target Groups**
+## Target Groups
 
 A target group is a group of servers (like EC2 instances) that receive traffic from a load balancer.
 
@@ -310,7 +314,7 @@ Think of it as: “Who should get the traffic?”
 
 Example: If you have a website running on 3 EC2s, all 3 can be in one target group, and the load balancer will send traffic to any of them.
 
-**Bastian**
+## Bastion
 
 A bastion is a secure server you use to connect to other private servers.
 
@@ -318,7 +322,7 @@ It acts as a mediator between private and public subnet
 
 Example: You can SSH into the bastion (which is public), and from there, access EC2s that are in private subnets.
 
-**Autoscaling group**
+## Autoscaling group
 
 An Auto Scaling Group automatically adds or removes EC2 instances based on demand.
 
