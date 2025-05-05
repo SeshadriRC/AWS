@@ -9,6 +9,8 @@
 
 [VPC](#vpc)
 
+- [prod_grade_vpc](#Production-grade-VPC-setup)
+
 [Firewall](#firewall)
 
 [Security Group and NACL](#securitygroup-and-nacl)
@@ -195,7 +197,7 @@ Click Create policy.
    
 Login to AWS Console.
 
-Search and open EC2.
+Search and open EC2
 
 2. Launch Instance:
    
@@ -331,6 +333,10 @@ The Internet Gateway allows bidirectional communication:
 Outbound (VM → Internet)
 
 Inbound (Internet → VM, if security rules allow)
+
+**Production grade VPC setup**
+
+![image](https://github.com/user-attachments/assets/95e09cd5-fade-48db-822e-cbaace515ae9)
 
 ## Firewall
 
